@@ -1,0 +1,17 @@
+#include <iostream>
+#include<stdlib.h>
+#include <string>
+using namespace std;
+
+int main ()
+
+
+
+{
+	cout<<" Informar o primeiro nome:'\n";
+	string primeiro_nome;
+	cin>>primeiro_nome;
+	cout<<"Seu nome é:"<<primeiro_nome<<"!\n";
+	
+	
+}
