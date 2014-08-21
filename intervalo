@@ -1,0 +1,19 @@
+#include <iostream>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+
+{
+	system("echo Forneça um numero inteiro no intervalo de 1 a 10:\n");
+	int a= 0;
+	    while(cin>>a){
+		if (1<=a && a<=10) break;
+		cout<<"numero informado "<<a<<" nao esta no intervalo 1 a 10, tente novamente:!";
+		
+	
+			
+	}	
+	
+}
