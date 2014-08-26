@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+using namespace std;
+int main ()
+{
+	char comp1[30], comp2[30];
+	int resultado;
+	cout<<"Digite uma palavra:";
+	cin>>comp1;
+	cout<<"Digite uma palavra:";
+	cin>>comp2;
+	resultado = strcmp(comp1,comp2);
+	if(resultado ==0){
+		cout<<"as palavras sao iguais.";
+		
+	}
+	else{
+		cout<<"as palavras sao diferentes";
+		
+	}
+	return 0;
+}
