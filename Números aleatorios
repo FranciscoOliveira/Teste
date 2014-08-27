@@ -5,11 +5,14 @@
  using namespace std;
 int main(void)
 {
-     int i; 
+     int i,aleatorios;  
       
-     cout<<"Gerando 10 valores aleatorios:\n\n";  
+     cout<<" Digite a quantidade da valores aleatorios:\n";
+     cin>>aleatorios;
+     
+     cout<<"Gerando "<<aleatorios<<" valores aleatorios:\n ";
           
-     for (i = 0; i < 20; i++)
+     for (i = 0; i < aleatorios; i++)
      {
            
            cout<<" "<<int (rand() % 100);
