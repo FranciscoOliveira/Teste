@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <cstdlib>
+
+int opcao;
+float tc, tf, tk, tran,trea;
+
+void Celsius() {
+  printf("\nDigite a temperatura em Celsius.: ");
+  scanf("%f", &tc);
+  tf = (tc*1.8+32);
+  printf("\nFahrenheits = %f\n", tf);
+  tk = (tc + 273);
+  printf("\nKelvin = %f\n", tk);
+  tran = ((tc*1.8)+32 + 459.67);
+  printf("\nRankine = %f\n", tran);
+  trea = (tc*0.8);
+  printf("\nReaumur = %f\n", trea);
+  system("pause");
+  }
+
+void Fahrenheits() {
+  
+  printf("\nDigite a temperatura em Fahrenheits.: ");
+  scanf("%f", &tf);
+  tc = ((tf-32)/1.8);
+  printf("\nCelsius = %f\n", tc);
+  tk = (tf+459.67)/1.8;
+  printf("\nKelvin = %f\n", tk);
+  tran = (tf+459.67);
+  printf("\nRankine = %f\n", tran);
+  trea = ((tf-32)/2.25);
+  printf("\nReaumur = %f\n", trea);
+  system("pause");  
+
+}
+
+void Kelvin() {
+
+  
+  printf("\nDigite a temperatura em Kelvin.: ");
+  scanf("%f", &tk);
+  tc = (tk-273.15);
+  printf("\nCelsius = %f\n", tc);
+  tf = ((tk*1.8)-459.67);
+  printf("\nFahrenheit = %f\n", tf);
+  tran = (tk*1.8);
+  printf("\nRankine = %f\n", tran);
+  trea = ((tk-273.15)*0.8);
+  printf("\nReaumur = %f\n", trea);
+  system("pause"); 
+
+}
+
+void rankine(){
+
+  printf("\nDigite a temperatura em rankine.: ");
+  scanf("%f", &tran);
+  tc = ((tran-32-459.67)/1.8);
+  printf("\nCelsius = %f\n", tc);
+  tf = (tran-459.67);
+  printf("\nFahrenheit = %f\n", tf);
+  tk = (tran/1.8);
+  printf("\nKelvin = %f\n", tk);
+  trea = ((tran-32-459.67)/2.25);
+  printf("\nReaumur = %f\n", trea);
+  system("pause"); 
+
+}
+
+void reaumur(){
+
+  printf("\nDigite a temperatura em reaumur.: ");
+  scanf("%f", &trea);
+  tc = (trea*1.25);
+  printf("\nCelsius = %f\n", tc);
+  tf = ((trea*2.25)+ 32);
+  printf("\nFahrenheit = %f\n", tf);
+  tk = ((trea*1.25) + 273.15);
+  printf("\nKelvin = %f\n", tk);
+  tran = ((trea*2.25) + 32 + 459.67);
+  printf("\nRankine = %f\n", tk);
+  system("pause"); 
+
+}
+
+
+
+main() {
+  printf("Engenharia da computacao\n");
+  printf("Francisco Jose Oliveira Santos \n");
+  printf("\n1-Celsius \n2-Fahrenheits \n3-Kelvin \n4-rankine \n5-reaumur \n6-Sair\n\nOpcao.: ");
+  scanf("%d", &opcao);
+  switch (opcao) {
+    case 1:
+      Celsius();
+      break;
+
+    case 2:
+      Fahrenheits();
+      break;
+
+    case 3:
+      Kelvin();
+      break;
+      
+	case 4:
+      rankine();
+      break;
+    
+	case 5:
+      reaumur();
+      break;
+
+    case 6:
+      printf("\nFinalizando o programa...\n");
+      break;
+
+    default:
+      printf("\nErro! Opcao inexistente.\n");
+      break;
+  }
+
+  return(0);
+}
