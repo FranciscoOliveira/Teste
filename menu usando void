@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <cstdlib>
+
+int teste;
+
+
+void teste1(){
+	printf("\nvoce esta no teste1\n");
+	system("pause");
+}
+void teste2(){
+	printf("\nvoce esta no teste1\n");
+	system("pause");
+}
+void teste3(){
+	printf("\nvoce esta no teste1\n");
+	system("pause");
+}
+void teste4(){
+	printf("\nvoce esta no teste1\n");
+	system("pause");
+}
+
+
+
+int main(){
+	printf("\n1-teste1 \n2-teste2 \n3-teste3 \n4-teste4 \n5-Sair\n\nOpcao.: ");
+	scanf("%d", &teste);
+	 
+ switch (teste) {
+    case 1:
+      teste1();
+      break;
+
+    case 2:
+      teste2();
+      break;
+
+    case 3:
+      teste3();
+      break;
+      
+	case 4:
+      teste4();
+      break;
+
+    case 5:
+      printf("\nFinalizando o programa...\n");
+      break;
+
+    default:
+      printf("\nErro! Opcao inexistente.\n");
+      break;
+  }
+
+  return(0);
+}
+
