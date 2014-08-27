@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <iostream>
+ using namespace std;
+int main(void)
+{
+     int i; 
+      
+     cout<<"Gerando 10 valores aleatorios:\n\n";  
+          
+     for (i = 0; i < 20; i++)
+     {
+           
+           cout<<" "<<int (rand() % 100);
+     }
+      
+     getch();
+     return 0;
+}
